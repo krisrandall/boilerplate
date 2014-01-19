@@ -206,7 +206,8 @@ ul {
 }
 @media (orientation:landscape) { 	
 	#footer.landscape-fullscreen, #header.landscape-fullscreen, 
-	#aside.landscape-fullscreen, #popup.landscape-fullscreen 
+	#aside.landscape-fullscreen,
+	#magic_positioning_table.landscape-fullscreen, #overlay.landscape-fullscreen
 	{
 		display: none;
 	}	
