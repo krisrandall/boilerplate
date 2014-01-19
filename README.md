@@ -11,7 +11,6 @@ The principles of boilerplate are to provile a framework which is:
  * simple
 
 It is to provide a basic, standard appearance for an App.
-The only decendency currently is jQuery.
 Extra functionality like local database access or templating are problems that are already being solved really well by others (eg. http://jaydata.org/ and http://goo.gl/9Rgz0y) and should be included with your App alongside boiler plate as required.
 
 This is my first public contribution to the open source world.
