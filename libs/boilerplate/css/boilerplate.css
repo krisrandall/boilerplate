@@ -182,6 +182,11 @@ ul {
 
 
 /* when in landscape mode hide header, footer, aside, popup  */
+/* NB: popup and aside don't get hid - i think that is because
+ *  JS has shown them, and that effectively overrides this css
+ * it means that the popup box looks ugly when you rotate the 
+ * screen - and issue i am willing to live with for now
+ */
 @media (orientation:portrait) { 
 	#footer, #header {
 		display: block;
