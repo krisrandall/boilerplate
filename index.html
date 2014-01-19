@@ -7,14 +7,18 @@
 		<script src="libs/jquery/js/jquery-1.10.2.min.js"></script>
 		<!-- transit - for smooth transitions -->
 		<script src="libs/transit/js/jquery.transit.min.js"></script>
-		
+		<!-- quo - for touch gestures -->
+		<script src="libs/quojs-2.3.6/quo.js"></script>
+				
 				
 		<!-- standard App appearance and functionality -->
 		<link href="libs/boilerplate/css/boilerplate.css" rel="stylesheet">	
 		<script src="libs/boilerplate/js/boilerplate.js"></script>
 
 		
-		
+		<script>
+			var b = new boilerplate();
+		</script>
 	</head>
 	
 	
@@ -45,13 +49,13 @@
 			</ul>			
 			<ul class="red">
 				<li><a>one</a></li>
-				<li><a onclick="alert('functionality!');">two</a></li>
-				<li><a>three</a></li>
+				<li><a onclick="alert('functionality!');">Standar Alert Box</a></li>
+				<li><a onclick="b.popup('I say this !');">boilerplate popup</a></li>
 			</ul>			
 			<ul class="white">
 				<li><a>one</a></li>
 				<li><a>two</a></li>
-				<li><a>three</a></li>
+				<li><a onclick="b.modal('I say this (and only X escapes) !');">boilerplate modal demo</a></li>
 			</ul>			
 			<ul class="black list">
 				<li>one</li>
