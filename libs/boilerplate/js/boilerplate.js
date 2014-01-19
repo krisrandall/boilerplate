@@ -71,7 +71,7 @@ $(document).ready(function() {
 	// add in the modal popup div (and overlay)
 	var popup = '<div id="popup" class="white"></div>';
 	var overlay = '<div id="overlay"></div>';
-	var magic_positioning_table = '<table id="magic_positioning_table" style="color : green;">'+
+	var magic_positioning_table = '<table id="magic_positioning_table">'+
 				  '<tr><td colspan="4"></td></tr>' +
 				  '<tr><td></td><td class="popupcell"></td><td></td></tr>' +
 				  '<tr><td colspan="4"></td></tr>' +
