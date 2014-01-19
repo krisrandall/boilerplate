@@ -87,7 +87,11 @@ html, body {
      text-align:center;
      z-index: 29;
      opacity: 0.5;
-     background-color: black;
+     /*
+      * leave this out for now because it leaves a weird box on my phone
+      * 
+   *  background-color: black; 
+   */
 }
 
 
