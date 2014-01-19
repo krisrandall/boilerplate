@@ -4,7 +4,9 @@
 	<head>
 		
 		<!-- jquery -->
-		<script src="libs/boilerplate/js/jquery-1.10.2.min.js"></script>
+		<script src="libs/jquery/js/jquery-1.10.2.min.js"></script>
+		<!-- transit - for smooth transitions -->
+		<script src="libs/transit/js/jquery.transit.min.js"></script>
 		
 				
 		<!-- standard App appearance and functionality -->
@@ -17,12 +19,14 @@
 	
 	
 	<body>
-		
+
+			
+
 		<div id="header" class="blue">
 			<h1>header</h1>
 		</div>
 		
-		<div id="main">
+		<div id="main" class="white">
 			
 			<h2>Some Buttons</h2>
 			<button class="button">Default</button>
@@ -59,13 +63,14 @@
 		<div id="footer" class="blue">
 			<h1>footer</h1>
 		</div>
-		
+	
+				
+				
 		<div id="aside" class="black">
 			<h2>Aside Menu</h2>
 			<ul>
 				<li><a onclick="$('#main').html('Whatever belongs there now!');">Menu Item One</a></li>
-				<li><hr></li>
-				<li>Menu Item 2</li>
+				<li><a onclick="$('#main').html('sdfasfdafdsa fdas');">Here is a much longer menu item</a></li>
 			</ul>
 		</div>
 		

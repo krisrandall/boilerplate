@@ -31,14 +31,31 @@ html, body {
 	top: 10%;
 }
 
-#aside, #popup {
-	display: none; /* these get displayed programatically */
+#aside,
+#popup {
+	display: none; 
+}
+
+#aside {
+	left:0;
+	top:0;
+	height: 100%;
+	z-index 1;	
+}
+#header, #footer, #main {
+	z-index: 2;
+}
+#popup {
+	z-index: 30;
 }
 
 #footer h1,
 #header h1 {
 	text-align: center;
+	margin : 0.2em;
 }
+
+
 
 /* some colours inspired by the ionicframework */
 .button {
@@ -96,13 +113,12 @@ a { color: inherit; }
 ul { padding: 0; }
 ul li a, ul.list li
 {
-	-webkit-transition: margin-left 0.2s ease-in-out, margin-right 0.2s ease-in-out, left 0.2s ease-in-out;
+	-webkit-transition: margin-left 0.2s ease-in-out, margin-right 0.2s ease-in-out, left 0.2s ease-in-out;   
 	-moz-transition: margin-left 0.2s ease-in-out, margin-right 0.2s ease-in-out, left 0.2s ease-in-out;
 	transition: margin-left 0.2s ease-in-out, margin-right 0.2s ease-in-out, left 0.2s ease-in-out;
 	position: relative;
-	z-index: 2;
 	display: block;
-	margin: -1px;
+
 	padding: 15px;
 	border-width: 1px;
 	border-style: solid;
@@ -119,7 +135,14 @@ ul {
 }
 
 
-
+/* some UI elements */
+#hamburger {
+	height: 100%;
+	width: auto;
+	position: absolute;
+	left: 0; top: 0;
+	border-right: thin solid gray;
+}
 
 
 
