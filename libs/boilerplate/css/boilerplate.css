@@ -146,4 +146,29 @@ ul {
 
 
 
+/* when in landscape mode hide header, footer, aside, popup  */
+@media screen and (orientation:portrait) { 
+	#footer, #header {
+		display: block;
+	}
+	#main {
+		height: 80%;
+		top: 10%;
+	}
+}
+@media screen and (orientation:landscape) { 	
+	#footer, #header, #aside, #popup {
+		display: none;
+	}	
+	#main {
+		height: 100%;
+		top: 0;
+	}
+	#header, #footer, #main {
+		left: 0;
+	}
+}
+ 
+ 
+
 
