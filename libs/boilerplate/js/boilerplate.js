@@ -97,4 +97,10 @@ $(document).ready(function() {
 	}
 	
 	
+	// apply the landscape-fullscreen class - removal of which 
+	// allows turning off the full screen on rotate behaviour
+	$('#header, #footer, #main, #aside, #popup').addClass('landscape-fullscreen');
+	
+	
 });
+

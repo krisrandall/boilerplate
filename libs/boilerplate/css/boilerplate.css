@@ -198,14 +198,17 @@ ul {
 	}
 }
 @media (orientation:landscape) { 	
-	#footer, #header, #aside, #popup {
+	#footer.landscape-fullscreen, #header.landscape-fullscreen, 
+	#aside.landscape-fullscreen, #popup.landscape-fullscreen 
+	{
 		display: none;
 	}	
-	#main {
+	#main.landscape-fullscreen {
 		height: 100%;
 		top: 0;
 	}
-	#header, #footer, #main {
+	#header.landscape-fullscreen, #footer.landscape-fullscreen, 
+	#main.landscape-fullscreen {
 		left: 0;
 	}
 }
