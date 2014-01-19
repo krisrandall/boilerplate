@@ -13,7 +13,7 @@ html, body {
 }
 
 
-#header, #main, #footer, #aside, #popup { 
+#header, #main, #footer, #aside { 
 	position: absolute;
 	overflow: scroll;
 }
@@ -34,8 +34,7 @@ html, body {
 	top: 10%;
 }
 
-#aside,
-#popup {
+#aside {
 	display: none; 
 }
 
@@ -59,16 +58,23 @@ html, body {
 
 /* pupup */
 #popup {
-	width: 70%;
-	height: 70%;
 	border: thin solid black;
 	border-radius: 2em;
 	background-color: white;
-	position: absolute;
+	position: relative;
 	z-index: 30;
 	overflow: scroll;
 	padding: 1em;
 	color: black;
+	padding: 2.5em;
+	min-height: 4em;
+	min-width: 4em;
+	opacity: 1;
+}
+#magic_positioning_table {
+	display: none;
+	z-index: 30;	
+	width:100%; height:100%; position: relative;
 }
 #overlay {
      display: none;
@@ -212,7 +218,6 @@ ul {
 		left: 0;
 	}
 }
- 
  
 
 

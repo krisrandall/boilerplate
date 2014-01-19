@@ -8,46 +8,24 @@
 var boilerplate = function() {
 	
 	
-	this.popup = function(html) {
-		$('#popup').html(html)
-				   .center();	
-		// add X
-		var close = '<img id="close" src="libs/icons/close.png"></img>';
-		$('#popup').append(close);
-		$('#close').on('click', function() { $('#popup').hide(); });
-		
-		$('#popup').show();
-	};
-		
 	
-	this.modal = function(html) {
-		$('#popup').html(html)
-				   .center();	
+	this.popup = function(html) {
+		$('#popup').html(html);	
 		// add X
 		var close = '<img id="close" src="libs/icons/close.png"></img>';
 		$('#popup').append(close);
-		$('#close').on('click', function() { $('#popup').hide(); $('#overlay').hide(); });
+		$('#close').on('click', function() { $('#magic_positioning_table').hide(); $('#overlay').hide(); });
 		
 		// add overlay
 		$('#overlay').show();
 		
-		$('#popup').show();
+		$('#magic_positioning_table').show();
 	};
 	
 	// for ajax popup use:  $('#popup').load(URL, function(html) { popup(html); }); 
 	
 };
 
-
-
-$.fn.center = function () {
-	this.css("position","absolute");
-	this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + 
-	                                            $(window).scrollTop()) + "px");
-	this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + 
-	                                            $(window).scrollLeft()) + "px");
-	return this;
-};
 
 
 
@@ -90,11 +68,19 @@ $(document).ready(function() {
 	
 	
 	
-	// add overlay div for use by modal popups
-	if ($('#popup').length>0) {
-		var overlay = '<div id="overlay"></div>';
-		$('body').append(overlay);
-	}
+	// add in the modal popup div (and overlay)
+	var popup = '<div id="popup" class="white"></div>';
+	var overlay = '<div id="overlay"></div>';
+	var magic_positioning_table = '<table id="magic_positioning_table" style="color : green;">'+
+				  '<tr><td colspan="4"></td></tr>' +
+				  '<tr><td></td><td class="popupcell"></td><td></td></tr>' +
+				  '<tr><td colspan="4"></td></tr>' +
+				  '</table>';
+	$('body').append(popup);
+	$('body').append(overlay);
+	$('body').append(magic_positioning_table);
+	$('#popup').appendTo('#magic_positioning_table td.popupcell');
+
 	
 	
 	// apply the landscape-fullscreen class - removal of which 
