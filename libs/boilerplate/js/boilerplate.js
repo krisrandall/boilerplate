@@ -85,7 +85,8 @@ $(document).ready(function() {
 	
 	// apply the landscape-fullscreen class - removal of which 
 	// allows turning off the full screen on rotate behaviour
-	$('#header, #footer, #main, #aside, #popup').addClass('landscape-fullscreen');
+	// HAVE TURNED THIS OFF - CONFUSING AND ALSO CAUSES ISSUE WHEN NO ASSIDE - BUT A NEAT IDEA STILL
+	//$('#header, #footer, #main, #aside, #popup').addClass('landscape-fullscreen');
 	
 	
 });
