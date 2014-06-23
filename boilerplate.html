@@ -1,5 +1,4 @@
 <!DOCTYPE >
-
 <html>
 	
 	<head>
@@ -8,37 +7,84 @@
 		<script src="libs/jquery/js/jquery-1.10.2.min.js"></script>
 		<!-- transit - for smooth transitions -->
 		<script src="libs/transit/js/jquery.transit.min.js"></script>
-		
+		<!-- quo - for touch gestures -->
+		<script src="libs/quojs-2.3.6/quo.js"></script>
+				
 				
 		<!-- standard App appearance and functionality -->
 		<link href="libs/boilerplate/css/boilerplate.css" rel="stylesheet">	
 		<script src="libs/boilerplate/js/boilerplate.js"></script>
+
 		
-		
+		<script>
+			var b = new boilerplate();
+		</script>
 	</head>
 	
 	
 	<body>
 
-		<div id="header">
-		</div>
-		
-		<div id="main">
-		</div>
-		
-		<div id="footer">
-		</div>
+			
 
-		
-		
-		<!-- if you want an aside hamburger menu -->
-		<div id="aside">
+		<div id="header" class="blue">
+			<h1>header</h1>
 		</div>
-		<!-- end if -->		
+		
+		<div id="main" class="white">
+			
+			<h2>Some Buttons</h2>
+			<button class="button">Default</button>
+			<button class="button blue">Blue</button>
+			<button class="button green">Green</button>
+			<button class="button red">Red</button>
+			<button class="button royal">Royal</button>
+			<button class="button black">Black</button>
+			<button class="button white">White</button>
+			
+			<h2>Some Lists</h2>
+			<ul class="royal">
+				<li><a>one</a></li>
+				<li><a>two</a></li>
+				<li><a>three</a></li>
+			</ul>			
+			<ul class="red">
+				<li><a>one</a></li>
+				<li><a>two</a></li>
+				<li><a>three</a></li>
+			</ul>			
+			<ul class="white">
+				<li><a>one</a></li>
+				<li><a>two</a></li>
+				<li><a>three</a></li>
+			</ul>			
+			<ul class="black list">
+				<li>one</li>
+				<li>two</li>
+				<li>three</li>
+			</ul>
+			
+			<h2>A modal</h2>
+			<button class="button" onclick="b.popup('I say this !');">Click me!</button>
+			
+		</div>
+		
+		<div id="footer" class="blue">
+			<h1>footer</h1>
+		</div>
+	
+				
+				
+		<div id="aside" class="black">
+			<h2>Aside Menu</h2>
+			<ul>
+				<li><a onclick="$('#main').html('Whatever belongs there now!');">Menu Item One</a></li>
+				<li><a onclick="$('#main').html('sdfasfdafdsa fdas');">Here is a much longer menu item</a></li>
+			</ul>
+		</div>
+		
 		
 		
 	</body>
 	
 	
 </html>
-
