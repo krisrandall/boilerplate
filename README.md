@@ -19,7 +19,3 @@ If you use boilerplate then I'd love to hear from you.
 
 Peace!
 
-
---- NB: this project is currently at a pre-alpha stage - I'm just experimenting with my first github repo right now - i'll update this document again when the boilerplate is approaching some kind of alpha stage ---
-
-
